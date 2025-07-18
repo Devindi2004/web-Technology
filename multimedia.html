@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multimidia</title>
+</head>
+<body>
+<!-- alt attribute eken karanne image ekaa load wenne nattan text eka desplay wenawa.
+ tittle eken image eka uda curser eka tibbama image name ekak desplay wenawa-->
+
+  <img src = "assets/files/files/images/large.jpg " title = "iphone 14" alt = "large iphone image">
+
+
+    <!--picture tag-->
+    <picture>
+        <source media = "(min-width: 1000px)" srcset = "assets/files/files/images/large.jpg" type = "image/jpg">
+        <source media = "(min-width: 800px)" srcset = "assets/files/files/images/medium2.jpg" type = "image/jpg">
+        <source media = "(min-width: 300px)" srcset = "assets/files/files/images/small.jpg" type = "image/jpg">
+
+    <!-- aniwaren img element ekak dala tibiya yutumai ( default image ekak tiyenn danne)-->
+
+        <img src = "assets/files/files/images/small2.jpg" alt = "large iphone image" title = "iphone">
+    </picture>
+<!-- poster attribute eka tjumbnel eka wagee. vdo eka play une nathi unat post eka load wela tyenawa-->
+    <video
+            controls
+            autoplay
+            muted
+            loop
+            width="800"
+            height="200"
+            poster = "assets/files/files/images/large.jpg"
+    >
+        <source src = "assets/files/files/videos/car.webm" type = "video/mp4">
+        <source src = "assets/files/files/videos/car.mp4" type = "video/mp4">
+
+        <track
+                src="assets/files/files/videos/subtitles/sample.vtt"
+                kind="subtitles"
+                srclang="en"
+                label="English"
+        >
+        <track
+                src="assets/files/files/videos/subtitles/arabic.vtt"
+                kind="subtitles"
+                srclang="ar"
+                label="Arabic"
+        >
+    </video>
+
+    <audio controls>
+        <source src = "assets/files/files/audios/audio_file2.mp3" type = "audio/mp3">
+    </audio>
+
+</body>
+</html>
