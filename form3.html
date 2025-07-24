@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form3</title>
+</head>
+<body>
+    <form>
+        <h1>Student Registration </h1>
+
+        <div>
+            <label for="fName">FirstName:</label>
+            <br>
+            <input type="text" id="fName">
+        </div>
+        <br>
+        <div>
+            <label for="lName">Last Name:</label>
+            <br>
+            <input type="text" id="lName">
+        </div>
+        <br>
+        <div>
+            <label for="address">Address:</label><br>
+            <textarea id="address" rows="3" cols="5"></textarea>
+        </div>
+        <br>
+
+        <label for="select"> select your program</label><br>
+        <br>
+        <div>
+        <select id="select" name="program">
+            <optgroup label="Backend Technology">
+                <option>JAVA</option>
+                <option>Python</option>
+                <option>C++</option>
+                <option>C</option>
+                <option>HTML</option>
+            </optgroup>
+          <optgroup label="Frontend Technology">
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>PHP</option>
+            <option>SQL</option>
+            <option>JSON</option>
+            <option>XML</option>
+
+          </optgroup>
+
+        </select>
+            </div>
+
+        <br>
+
+        <div>
+        <label>Select your gender</label><br>
+        <input type="radio" id ="male" name="gender"><label>Male</label>
+        <br>
+        <input type="radio" id="female" name="gender"><label>Female</label>
+        <br>
+        <input type="radio" id="unknown" name="gender"><label>Unknown</label>
+        </div>
+        <br>
+
+        <div>
+        <br><br>
+
+        <label for="developers">Choose a browser from this list:</label>
+        <input list="browsers" id="developers" name="developers" />
+        <datalist id="browsers">
+            <option value="fontend developer"></option>
+            <option value="backend developer"></option>
+            <option value="bult-in developer"></option>
+            <option value="qualified developer"></option>
+            <option value="business Analysis"></option>
+
+        </datalist>
+
+            <button type="reset">Reset</button>
+            <button type="button">Delete</button>
+            <button type="button">Update</button>
+            <button type="submit">Submit</button>
+        </div>
+
+
+
+    </form>
+</body>
+</html>
