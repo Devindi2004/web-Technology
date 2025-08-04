@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Type Selector</title>
     <style>
-        /*!*type selector*!*/
+        /*///////////////////////////////////   !*type selector*!*/
         /*h1{*/
         /*    color: red;*/
         /*}*/
-        /*!*ID Selector*!*/
+        /*///////////////////////////////////   !*ID Selector*!*/
         /*#masters{*/
         /*    color: palevioletred;*/
         /*}*/
@@ -21,11 +21,11 @@
         /*}*/
 
         /**{*/
-        /*    !*universel selector*!*/
+        /*   /////////////////////////////////// universel selector*!*/
         /*    color: blue;*/
         /*}*/
 
-        /*Attribute Selector*/
+        /*///////////////////////////////////    Attribute Selector*/
         /*[href]{*/
         /*background-color: pink;*/
         /*}*/
@@ -35,7 +35,7 @@
         /*[class]{*/
         /*    background-color: skyblue;*/
         /*}*/
-    /*Attribute Selector with the value*/
+    /*  ///////////////////////////////////     Attribute Selector with the value*/
     /*   [href = "https://www.ijse.lk"] {*/
     /*    color: yellowgreen;*/
     /*    }*/
@@ -57,13 +57,77 @@
        /*     background-color: lime;*/
        /* }*/
 
-        [href ~= "code"]{
-            background-color: lime;
+        /*[href ~= "code"]{*/
+        /*    background-color: lime;*/
+        /*}*/
+
+        /*h3[class]{*/
+        /*    background-color: green;*/
+        /*}*/
+
+        /*h1:hover{*/
+        /*    color: red;*/
+        /*    background-color : lightpink;*/
+        /*}*/
+        /*h1:active{*/
+        /*    color: green;*/
+        /*    background-color : lightpink;*/
+        /*}*/
+        /*a:link{*/
+        /*    color: blue;*/
+        /*}*/
+        /*a:visited{*/
+        /*    color: gold;*/
+        /*}*/
+        /*wrap wela tynna onii meka use karannnam.*/
+
+        /*li:nth-child(3){*/
+        /*    color: blue;*/
+        /*}*/
+        /*li:nth-child(4){*/
+        /*    color: gold;*/
+        /*}*/
+        /*li:nth-last-child(2){*/
+        /*    color: lightcoral;*/
+        /*}*/
+        /*li:nth-last-child(4){*/
+        /*    color:green ;*/
+        /*}*/
+        /* li:nth-child(odd){*/
+        /*    color:purple ;*/
+        /*}*/
+        /*li:nth-child(even){*/
+        /*    color:yellow ;*/
+        /*}*/
+        /*li:nth-child(n+4){*/
+        /*    color:red ;*/
+        /*}*/
+        /*li:nth-child(3n-1){*/
+        /*    color:yellow ;*/
+        /*}*/
+        /*li:nth-child(3n+1){*/
+        /*    color:lime ;*/
+        /*}*/
+        /*li:nth-child(4n){*/
+        /*    color:orange ;*/
+        /*}*/
+
+        /*pseudo element selector eken karanne path eka select karaganna eka*/
+        /*h1::after{*/
+        /*    content:" HHH... MAMA THAMAI BATMAN";*/
+        /*    color: lime;*/
+        /*}*/
+        /*#myText::first-line{*/
+        /*    background-color: pink;*/
+        /*}*/
+        /*#myText::first-letter{*/
+        /*    color: red;*/
+        /*}*/
+        ::selection{
+            color: red;
+            background-color: pink;
         }
 
-        h3[class]{
-            background-color: green;
-        }
 
     </style>
 </head>
@@ -78,7 +142,12 @@
 <a href="http://www.root code .io">Root Code IO</a> <br>
 
 
-
+<p id = "myText">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
+    lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
+    lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
+    lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
+</p>
 
 <h1>Institute Of Software Engineering</h1>
     <h2 id="masters">masters Of Software Engineering</h2>
@@ -95,12 +164,7 @@
         lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
         lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
     </p>
-    <p class="mystyle">
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
-    </p>
+
     <h3 class>
         lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
     </h3>
@@ -108,5 +172,16 @@
         lorem ipsum dolor sit<span id="span">amet consectetur adipisicing elit. Quae, quibusdam.</span>lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
         lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quibusdam.
     </div>
+<ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>C#</li>
+    <li>JAVA</li>
+    <li>Java Script</li>
+    <li>Python</li>
+    <li>R</li>
+    <li>ass</li>
+    <li>BB</li>
+</ul>
 </body>
 </html>
