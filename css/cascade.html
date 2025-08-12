@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cascade</title>
+    <style>
+        /*(cascade kiyanne api ekama element ekata defferetnt css apply kardddi mokakd hariyatama toraganne kiyala dena solution ekata kiyanwa casecase kyla)*/
+        /*(eya fullow karana machanisum ekak tiiyenawa)*/
+
+        h1{/*0,0,0,1*/
+            color: red;
+        }
+        *{ /*0,0,0,0 */
+            color: blue;
+        }
+        #myHeading{/*0,1,0,0 */
+            color: skyblue;
+        }
+        .myClass{/*0,0,1,0 */
+            color: green;
+        }
+    </style>
+</head>
+<body>
+/*inline css (1,0,0,0)*/
+<h1 id="myHeading" class="myClass" style="color: lime">Hello CSS!</h1>
+</body>
+</html>
