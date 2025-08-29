@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .main-div{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        #div1{
+            background-color: red;
+        }
+        #div2{
+            background-color: green;
+            right: 0;
+        }
+        #div3{
+            background-color: gold;
+            bottom: 0;
+        }
+        #div4{
+            background-color: purple;
+            right: 0;
+            bottom: 0;
+        }
+        .main-div >div {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+        .main-div >div > div {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        #middel-div{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #middel-div>div{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute; /* parentge atulee*/
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+        .corner-div{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius:0;
+            position: absolute;
+
+        }
+        #corner1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-top-right-radius: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        #corner2{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-bottom-left-radius: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        #corner3{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            border-top-left-radius: 100%;
+            right: 0;
+            bottom: 0;
+        }
+        #corner4{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-bottom-right-radius: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .half-div{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+
+        }
+        #half1{
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -100px;
+        }
+        #half2{
+            bottom: -100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id = "div1" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id = "div2" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id = "div3" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id = "div4" class="main-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="middel-div">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id = corner1 class = "corner-div"></div>
+<div id = corner2 class = "corner-div"></div>
+<div id = corner3 class = "corner-div"></div>
+<div id = corner4 class = "corner-div"></div>
+
+<div id = "half1" class ="half-div" >
+    <div></div>
+</div>
+<div id = "half2" class ="half-div" >
+    <div></div>
+</div>
+</body>
+</html>
