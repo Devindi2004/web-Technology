@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS flex LayOut(Flex box Lay Out)</title>
+
+    <style>
+        section{
+            background-color: yellow;
+            display: flex;/*flex box lay out eka.. pallehata tiyena lay out tika eka peliyata set wela display wenawa*/
+            /*flex-direction: row;!*column, row(default value eka row),  *!*/
+            /*flex-direction: column-reverse;!*column reverse wenawa.item tikat wenas wenawa*!*/
+            /*flex-direction: row-reverse;!*row reverse wenawa.item tikat wenas wenawa*!*/
+        }
+        section>div{
+            width: 50px;
+            height: 50px;
+            border: 2px solid blue;
+            background-color: lightblue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+
+</section>
+
+</body>
+</html>
