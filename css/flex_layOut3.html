@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS flex LayOut(Flex box Lay Out)</title>
+
+    <style>
+        section{
+            background-color: yellow;
+            display: flex;
+            /*justify-content: space-between;!*(start, center, end)*!*/
+            /*justify-content: space-around;!*depattenma samana space ekak gannawa*!*/
+            justify-content: space-evenly;/*space eka hema tenama samanai (x=x)*/
+        }
+        section>div{
+            width: 50px;
+            height: 50px;
+            border: 2px solid blue;
+            background-color: lightblue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+</section>
+
+</body>
+</html>
