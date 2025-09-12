@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>water drop</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            border: 2px solid blue;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition-duration: 2s;
+
+            animation-name: drop;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: normal;
+
+        }
+        @keyframes drop {
+            from{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                border: 2px solid blue;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                border: 2px solid blue;
+                opacity: 10%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

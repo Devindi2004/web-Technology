@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      background: skyblue;
+      overflow: hidden;
+    }
+
+    .road {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 120px;
+      background: #333;
+    }
+
+    .car {
+      position: absolute;
+      bottom: 100px;
+      width: 200px;
+      height: 80px;
+      background: red;
+      border-radius: 15px;
+      animation-name: drive;
+      animation: drive 5s linear infinite;
+    }
+
+    .wheel {
+      position: absolute;
+      bottom: -20px;
+      width: 50px;
+      height: 50px;
+      background: black;
+      border-radius: 50%;
+      border: 5px solid #555;
+      animation-name: spin;
+      animation: spin 1s linear infinite;
+    }
+
+    .wheel.left {
+      left: 20px;
+    }
+
+    .wheel.right {
+      right: 20px;
+    }
+
+    @keyframes drive {
+      0% { left: -250px; }
+      100% { left: 100vw; }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+<div class="road"></div>
+<div class="car">
+  <div class="wheel left"></div>
+  <div class="wheel right"></div>
+</div>
+</body>
+</html>

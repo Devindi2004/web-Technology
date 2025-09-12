@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation-name: move;
+            animation-duration: 5000ms;
+            /*animation-delay: 5000ms;*/
+            /*animation-direction: normal; !*kalin vidiyatama wada kaaaranwa*!*/
+            /*animation-direction: reverse; !*TO frame ekee idan FROM frame ekata yanwa*!*/
+            /*animation-direction: alternate-reverse; from ekee idn to ekata yanwa*/
+            /*animation-direction: alternate-reverse; to ekee idn from ekata yanwa*/
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-in;
+/*            animation-timing-function: ease-in-out; ease -> dennama eka wagee wada karanne*/
+/*            animation-timing-function: ease-in; slow start -> fast end*/
+/*            animation-timing-function: ease-out; fast start -> slow end*/
+/*            animation-timing-function: ease-in-out; slow start -> fast end -> slow end*/
+/*            animation-timing-function: linear; constant speed (ekama speed eken patan ganna tana idan iwara wena tana wenakam yanne yanne)*/
+        }
+        @keyframes move {
+            from{
+              margin-left: 0px;
+            }
+            to{
+                margin-left: 500px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
