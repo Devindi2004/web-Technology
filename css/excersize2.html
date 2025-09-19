@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 02</title>
+
+  <style>
+    body{
+      background-color: #7075cf;
+    }
+    div{
+      width: 200px;
+      border-radius: 100%;
+      aspect-ratio: 1/1;
+      background-color: #606060;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+    div>h1{
+      width:max-content;
+      height: max-content;
+
+      color: white;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+    div::before{
+      content: "";
+      border: 10px solid white;
+      border-radius: 100%;
+      border-top-color: #090465;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      animation: animation 3s infinite;
+    }
+    @keyframes animation {
+      from{
+        transform: rotate(0);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h1>
+    TM
+  </h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 05</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    main{
+      width: 1000px;
+      height: 800px;
+      overflow: hidden;
+      border: 3px solid red;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    section{
+      width: calc(1000px * 4);
+      height: 800px;
+
+      display: flex;
+
+      animation: animate-slider 20s infinite;
+    }
+
+    div{
+      width: 1000px;
+      height: 800px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    div:nth-child(1){
+      background-image: url("../assets/WhatsApp Image 2025-08-23 at 16.18.26.jpeg");
+    }
+    div:nth-child(2){
+      background-image: url("../assets/WhatsApp Image 2025-08-23 at 16.21.46.jpeg");
+    }
+    div:nth-child(3){
+      background-image: url("../assets/WhatsApp Image 2025-08-23 at 16.18.27.jpeg");
+    }
+    div:nth-child(4){
+      background-image: url("../assets/WhatsApp Image 2025-08-23 at 16.21.46.jpeg");
+    }
+
+
+    @keyframes animate-slider {
+      0%,10%{
+        transform: translateX(0);
+      }
+      15%,25%{
+        transform: translateX(-1000px);
+      }
+      30%,40%{
+        transform: translateX(calc(-1000px * 2));
+      }
+      45%,55%{
+        transform: translateX(calc(-1000px * 3));
+      }
+      60%,70%{
+        transform: translateX(calc(-1000px * 2));
+      }
+      75%,85%{
+        transform: translateX(-1000px);
+      }
+      90%,100%{
+        transform: translateX(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</main>
+</body>
+</html>
