@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unary Operators</title>
+</head>
+<body>
+
+<script>
+
+    var a = "10";
+
+    console.log(a + 2);//String operator (102)
+    console.log(+a + 2);//Unary operator (12)
+
+    var b = "4";
+    console.log(-b);//unary minus operator (-4) string eka convert karanawa minus number ekakata
+    console.log(+b);//unary plus operator (+4) string eka convert karanawa plus number ekakata
+
+    var c = 5;
+    console.log(-c); // + number ekak minus karanawa -5
+    console.log(+c); // - number ekak plus karanawa +5
+
+    //increment operators
+
+    var d = 4;
+    d++;
+    console.log(d);//5
+
+    var e = 4;
+    ++e;
+    console.log(e);//5
+
+    var sum = 5 + ++d;
+    console.log("Sum: "+sum);//11
+
+    var e = 4;
+    ++e;
+    console.log(e);//5
+
+    var sum = 5 + d++;
+    console.log("Sum: "+sum);
+
+
+    //decrement operators
+
+    var f = 5;
+    f--;
+    console.log(f);//4
+
+    var g = 5;
+    --g;
+    console.log(g);//4
+
+    var e = 4;
+    ++e;
+    console.log(e);//5
+
+    var sum = 5 + --d;
+    console.log("Sum: "+sum);
+
+    var e = 4;
+    ++e;
+    console.log(e);//5
+
+    var sum = 5 + d--;
+    console.log("Sum: "+sum);
+
+</script>
+</body>
+</html>
