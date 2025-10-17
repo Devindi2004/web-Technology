@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //name function
+    function myFunction1(num) {
+       if (num % 2 ===0) {
+           console.log(num + " is even")
+       }else {
+           console.log(num + " is odd")
+       }
+    }
+    myFunction1(10);
+
+    // function expression
+
+    var myFunction2 = function (num) {
+        if (num % 2 ===0) {
+            console.log(num + " is even")
+        }else {
+            console.log(num + " is odd")
+        }
+    }
+    myFunction2(7);
+
+    //Arrow Function
+
+    var num = 40;
+    const myFunction3 = () => {
+        if (num % 2 ===0) {
+            console.log(num + " is even")
+        }else {
+            console.log(num + " is odd")
+        }
+    }
+    myFunction3();
+
+
+</script>
+</body>
+</html>
