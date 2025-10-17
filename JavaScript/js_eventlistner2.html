@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event listener 2</title>
+  <style>
+    #bulb{
+      width: 100px;
+      aspect-ratio: 1/1 ;
+      border: 1px solid brown;
+      border-radius: 50%;
+
+    }
+
+    #counter{
+      width: 100px;
+      aspect-ratio: 1/1 ;
+      border: 1px solid brown;
+      border-radius: 50%;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+
+<div id="bulb"></div>
+<button id="btn">On</button>
+
+  <h1 id="counter">0</h1>
+
+<button id="counterBtn">Start</button>
+
+<br>
+<br>
+
+
+<input type="text" id="my_input">
+<h1 id="my_h1"></h1>
+
+<script>
+ document.getElementById('btn').addEventListener('click',function(){
+   if (document.getElementById('btn').innerText === 'On'){
+     document.getElementById('bulb').style.backgroundColor = 'yellow';
+     document.getElementById('btn').innerText = 'Off';
+   }else {
+     document.getElementById('bulb').style.background = 'none';
+     document.getElementById('btn').innerText = 'On';
+   }
+ })
+//==================================================================
+
+
+const counter = document.getElementById('counter');
+ const counterBtn = document.getElementById('counterBtn');
+
+ var interval;
+
+ counterBtn.addEventListener('click',function(){
+   if (counterBtn.innerText === "Start"){
+     counterBtn.innerText = "Stop";
+       interval = setInterval(() => {
+         counter.innerText = +counter.innerText + 1;
+   },500);
+ }else {
+     counterBtn.innerText = "Start";
+   clearInterval(interval);
+ }
+ })
+
+//=============================================================
+
+ const my_input = document.getElementById('my_input');
+ const my_h1 = document.getElementById('my_h1');
+
+ my_input.addEventListener('input',function(){
+   my_h1.innerText = my_input.value;
+ });
+
+
+
+</script>
+</body>
+</html>

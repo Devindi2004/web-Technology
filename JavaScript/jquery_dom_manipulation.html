@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JQuery DOM</title>
+
+</head>
+<body>
+
+<section>
+  <div>
+    <ol>
+      <li>java</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>C#</li>
+    </ol>
+  </div>
+  <div>
+    <ul>
+      <li>JS</li>
+      <li>TS</li>
+      <li>React.js</li>
+      <li>Next.js</li>
+    </ul>
+  </div>
+</section>
+
+<script src="../assets/files/files/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+  $('section>div:first-child>ol>li:last-child').text("Perl");
+  $('section>div:last-child>ul>li:nth-child(3)').text("Vue.js")
+
+</script>
+</body>
+</html>
