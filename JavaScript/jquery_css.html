@@ -5,9 +5,21 @@
     <title>jquery css</title>
 </head>
 <body>
+<h1>Hello Jquery!</h1>
 
+<script src="../assets/files/files/lib/jquery-3.7.1.min.js"></script>
 <script>
 
+   var style = {
+       color: "blue",
+       background: "lightblue"
+    }
+    $("h1").eq(0).css(style)
+
+    $("h1").eq(0).css({
+        color: "green",
+        background: "lightgreen"
+    })
 </script>
 </body>
 </html>

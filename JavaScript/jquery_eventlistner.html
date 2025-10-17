@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery eventlisner</title>
+    <style>
+        #Box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<button >Click Me!</button>
+<br><br>
+<div id="Box1"></div>
+<br>
+<label for="input1">Enter your Name</label>
+<input type="text" id="input1">
+<br>
+<h1 id="text1"></h1>
+
+<script src="../assets/files/files/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+    // document.getElementsByTagName("button")[0].addEventListener("click", function () {
+    //     console.log("Hello World!");
+    // })
+
+    $("button").eq(0).on('click', function () {
+        console.log("single Clicked!");
+    })
+
+     $("button").eq(0).on('dblclick', function () {
+        console.log("Double Clicked!");
+     })
+    // //===================================================
+
+    $("#Box1").on('mouseenter', function () {
+        console.log("Mouse enter!");
+    })
+
+    $("#Box1").on('mouseleave', function () {
+        console.log("Mouse leave!");
+    })
+
+    $("#Box1").on('mouseover', function () {
+        console.log("Mouse over!");
+    })
+
+    $("#Box1").on('mouseout', function () {
+        console.log("Mouse out!");
+    })
+
+    $("#Box1").on('mousemove', function () {
+        console.log("Mouse move!");
+    })
+
+    $("#Box1").on('mousedown', function () {
+        console.log("Mouse down!");
+    })
+
+    $("#Box1").on('mouseup', function () {
+        console.log("Mouse up!");
+    })
+    $('#input1').on('click', function () {
+        console.log("Focused!");
+    })
+
+    $('#input1').on('blur', function () {
+        console.log("Blurred!");
+    })
+
+    $('#input1').on('keydown', function (){
+        console.log("KeyDown!");
+    })
+
+    $('#input1').on('keypress', function (){
+        var value = $('#input1').val();
+        $('#text').text(value);
+    })
+
+    $('#input1').on('keyup', function (){
+        var value = $('#input1').val();
+        $('#text1').text(value);
+    })
+
+    $('#input1').on('keyup', function (e){
+        console.log(e.which);
+        if (e.which === 13) {
+            var value = $('#input1').val();
+            $('#text1').text(value);
+        }
+
+    })
+
+</script>
+</body>
+</html>
